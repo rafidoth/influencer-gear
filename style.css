@@ -204,8 +204,17 @@ a{
 }
 
 
+.see-more{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
 
-
+.see-more .btn-link{
+    margin-top: 10px;
+    color: #E02C6D;
+    background-color: initial;
+}
 
 /*------------------------------------*\
   #CUSTOMER'S REVIEW
@@ -358,4 +367,47 @@ footer{
     .review{
         width: initial;
     }
+    .see-more{
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 688px ) and (max-width: 992px){
+    .container{
+        width: 90%;
+    }
+    .links {
+        display: none;
+    }
+    .logo{
+        flex-direction: column;
+    }
+    .hero-text h1 {
+        font-size: 30px;
+    }
+    .design {
+        width: 349px;
+        
+    }
+    .cam {
+        position: absolute;
+        top: 50px;
+        width: 70%;
+    }
+
+    .popular-grid-container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 70px 50px;
+    }
+    .customer-grid-container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 60px 150px;
+        justify-items: center;
+    }
+
+    
+
+
 }
